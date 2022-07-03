@@ -1,14 +1,17 @@
 {
   "name": "origogi-homepage",
   "version": "1.0.0",
-  "description": "",
+  "description": "Origogi's website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write",
+    "lint": "next lint"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Origogi<kim jeongtae>",
+  "license": "MIT",
   "dependencies": {
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11.9.3",
@@ -17,5 +20,10 @@
     "next": "^12.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-next": "^12.2.0",
+    "prettier": "^2.7.1"
   }
 }
