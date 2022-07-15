@@ -45,7 +45,22 @@ const Navbar = props => {
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
-    ></Box>
+    >
+      <Container
+        display="flex"
+        p={2}
+        maxW="container.md"
+        wrap="wrap"
+        align="center"
+        justify="space-between"
+      >
+        <Flex align="center" mr={5}>
+          <Heading as="hi" size="lg" letterSpacing={'tighter'}>
+            <Logo />
+          </Heading>
+        </Flex>
+      </Container>
+    </Box>
   )
 }
 

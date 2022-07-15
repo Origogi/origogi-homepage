@@ -19,12 +19,13 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
+  //   const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
 
+  const logoImg = '/images/logo.png'
   return (
     <Link href="/">
       <LogoBox>
-        <Image src={footPrintImg} width={20} height={20} alt="logo" />
+        <Image src={logoImg} width={20} height={20} alt="logo" />
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
           fontFamily="M PLUS Rounded 1c"
