@@ -6,7 +6,7 @@ const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
       <Head>
-        <meta name="viewport" content="width=device-width, intial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Origogi - Homepage</title>
       </Head>
 
