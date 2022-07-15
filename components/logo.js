@@ -30,7 +30,9 @@ const Logo = () => {
           fontFamily="M PLUS Rounded 1c"
           fontWeight="bold"
           ml={3}
-        />
+        >
+          Jeongtae Kim
+        </Text>
       </LogoBox>
     </Link>
   )
