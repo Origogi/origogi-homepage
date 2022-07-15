@@ -11,7 +11,7 @@ const Page = () => {
           <Heading as="h2" variant="page-title">
             Jeongtae Kim (Origogi)
           </Heading>
-          <p>Front-End Engineer ( Android / Flutter / React )</p>
+          <p>Front-End Engineer ( Android / Flutter / Web )</p>
         </Box>
       </Box>
     </Container>
