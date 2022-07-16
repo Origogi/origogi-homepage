@@ -11,6 +11,7 @@ import {
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
   return (
@@ -64,6 +65,31 @@ const Page = () => {
             <Button rightIcon={<ChevronRightIcon />}>My portfolio</Button>
           </NextLink>
         </Box>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1988</BioYear>
+          Born in Busan, Korea
+        </BioSection>
+        <BioSection>
+          <BioYear>2006</BioYear>
+          Bachelor of Science in Computer Engineering in Konkuk Univ.
+        </BioSection>
+        <BioSection>
+          <BioYear>2013</BioYear>
+            Worked at LG Electronics (Mobile)
+        </BioSection>
+        <BioSection>
+          <BioYear>2020</BioYear>
+            Worked at 11 Street
+        </BioSection>
+        <BioSection>
+          <BioYear>2022</BioYear>
+            Worked at Kakao Brain
+        </BioSection>
       </Section>
     </Container>
   )
