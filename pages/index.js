@@ -76,7 +76,7 @@ const Page = () => {
         </BioSection>
         <BioSection>
           <BioYear>2006</BioYear>
-          Bachelor of Science in Computer Engineering in Konkuk Univ.
+          Bachelor of Science in Computer Engineering at Konkuk Univ. Seoul
         </BioSection>
         <BioSection>
           <BioYear>2013</BioYear>
