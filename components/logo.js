@@ -26,7 +26,6 @@ const Logo = () => {
       <a>
         <LogoBox>
           <Image src={logoImg} width={20} height={20} alt="logo" />
-        </LogoBox>
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
           fontFamily="M PLUS Rounded 1c"
@@ -34,6 +33,7 @@ const Logo = () => {
         >
           Origogi
         </Text>
+        </LogoBox>
       </a>
     </Link>
   )
