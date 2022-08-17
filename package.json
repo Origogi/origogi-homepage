@@ -4,15 +4,16 @@
   "description": "Origogi's Website",
   "main": "index.js",
   "scripts": {
-    "dev" : "next dev -H 0.0.0.0",
-    "build" : "next build",
-    "prettier" : "prettier -write . ",
-    "lint" : "next lint"
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write . ",
+    "lint": "next lint"
   },
   "keywords": [],
   "author": "Origogi Kim",
   "license": "MIT",
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.8",
     "@chakra-ui/react": "^2.2.8",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
