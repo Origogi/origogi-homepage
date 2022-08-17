@@ -10,7 +10,7 @@
     "lint" : "next lint"
   },
   "keywords": [],
-  "author": ""Origogi Kim,
+  "author": "Origogi Kim",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/react": "^2.2.8",
