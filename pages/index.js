@@ -1,4 +1,5 @@
 import {
+  Button,
   Container,
   Box,
   Heading,
@@ -7,6 +8,9 @@ import {
   chakra,
 } from '@chakra-ui/react'
 import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import NextLink from 'next/link'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop),
@@ -62,7 +66,19 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        <p>Paragraph</p>
+        <Paragraph>
+          I have about 9 years of Android developed experience and I am
+          currently working as a Flutter developer. And recently, I am
+          interested in developing the web and studying JavaScript, HTML, CSS,
+          and React.
+        </Paragraph>
+        <Box align="center" my={4}>
+          <NextLink href="works">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My portfolio
+            </Button>
+          </NextLink>
+        </Box>
       </Section>
     </Container>
   )
