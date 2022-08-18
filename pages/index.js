@@ -11,6 +11,7 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
+import { BioSection, BioYear } from '../components/bio'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop),
@@ -79,6 +80,31 @@ const Page = () => {
             </Button>
           </NextLink>
         </Box>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1988</BioYear>
+          Born in Busan, Korea
+        </BioSection>
+        <BioSection>
+          <BioYear>2006</BioYear>
+          Bachelor of Science in Computer Engineering at Konkuk Univ. Seoul
+        </BioSection>
+        <BioSection>
+          <BioYear>2013</BioYear>
+          Worked at LG Electronics, Seoul
+        </BioSection>
+        <BioSection>
+          <BioYear>2020</BioYear>
+          Worked at 11 Street, Seoul
+        </BioSection>
+        <BioSection>
+          <BioYear>2022</BioYear>
+          Worked at Kakao Brain, Pangyo
+        </BioSection>
       </Section>
     </Container>
   )
