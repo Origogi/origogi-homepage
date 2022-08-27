@@ -28,7 +28,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
         <Image
           src={thumbnail}
           alt={title}
-          classNam="grid-item-thumbnail"
+          className="grid-item-thumbnail"
           placeholder="blur"
         />
         <LinkOverlay href={`/works/${id}`}>
@@ -43,10 +43,11 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
 )
 
 export const GridItemStyle = () => (
-    <Global styles={`
+  <Global
+    styles={`
     .grid-item-thumbnail {
         border-radius :12px;
     }
     `}
-    />
+  />
 )
