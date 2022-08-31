@@ -12,5 +12,8 @@ export const Title = ({ children }) => (
       <ChevronRightIcon />
       &nbsp;
     </span>
+    <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
+        {children}
+    </Heading>
   </Box>
 )
