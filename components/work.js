@@ -13,7 +13,17 @@ export const Title = ({ children }) => (
       &nbsp;
     </span>
     <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
-        {children}
+      {children}
     </Heading>
+  </Box>
+)
+
+export const WorkImage = ({ src, alt }) => (
+  <Image borderRadius="lg" w="full" alt={alt} mb={4} src={src}></Image>
+)
+
+export const Meta = ({ children}) => (
+  <Box colorScheme="green" mr={2}>
+    {children}
   </Box>
 )
