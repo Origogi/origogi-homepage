@@ -6,6 +6,11 @@ import {
   Image,
   useColorModeValue,
   chakra,
+  List,
+  Link,
+  ListItem,
+  SimpleGrid,
+  Icon,
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -13,6 +18,13 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layout/article'
+import { GridItem } from '../components/grid-item'
+import {
+  IoLogoFacebook,
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoHome,
+} from 'react-icons/io5'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop),
@@ -107,6 +119,50 @@ const Page = () => {
             <BioYear>2022</BioYear>
             Worked at Kakao Brain, Pangyo
           </BioSection>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Contacts
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/Origogi" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoGithub />}
+                >
+                  @Origogi
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/%EC%A0%95%ED%83%9C-%EA%B9%80-679975155/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoLinkedin />}
+                >
+                  @Jeongtae Kim
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://origogi.github.io/" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoHome />}
+                >
+                  origogi.github.io
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
