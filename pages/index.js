@@ -88,11 +88,14 @@ const Page = () => {
             and React.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works">
+            <a
+              taget="_blank"
+              href="https://drive.google.com/file/d/1qLDFY6JBr_WebsPVXs6oaEoNkcpR31p0/view"
+            >
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                My portfolio
+                Download Resume
               </Button>
-            </NextLink>
+            </a>
           </Box>
         </Section>
         <Section delay={0.2}>

@@ -47,6 +47,9 @@ export const GridItemStyle = () => (
     styles={`
     .grid-item-thumbnail {
         border-radius :12px;
+        max-height : 20%;
+        min-height : 20%;
+
     }
     `}
   />
